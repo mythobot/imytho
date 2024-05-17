@@ -1,0 +1,13 @@
+{
+	"version": "v1.0",
+	"bot_name": "Mytho",
+	"bot_id": "1223343717184835754",
+	"theme": {
+		"color": "#5865F2"
+	},
+	"links": {
+		"support_server": "https://discord.gg/5enJVWgY4m",
+		"bot_invite": "https://discord.com/oauth2/authorize?client_id=1223343717184835754",
+		"vote_url": "https://top.gg/bot/1223343717184835754/"
+	}
+}

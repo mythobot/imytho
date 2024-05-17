@@ -1,0 +1,32 @@
+<%- include('parts/meta') %>
+<meta name="description" content="Here u can find all the mytho commands!" />
+<title>Mytho Commands</title>
+</head>
+<body>
+<%- include('parts/head') %>
+
+<div style="text-align: center; padding: 25px 0 35px 0;">
+  <h1 style="font-weight: bold; color: var(--font-color); font-size: 27px;"><span style="border-bottom: 2.5px solid var(--page-color);">Mytho Commands</span></h1>
+</div>
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <input type="text" id="searchCommands" onkeyup="searchCmd()" placeholder="Search command..." title="Type a command name">
+</div>
+
+<table id="cmdTable">
+  <tr class="header">
+    <th style="width:33%;">Command</th>
+    <th style="width:54%;">Description</th>
+    <th style="width:13%;">Category</th>
+  </tr>
+  <% cmd.forEach((x)=> { %>
+  <tr>
+    <td><%= x.command %></td>
+    <td><%= x.description %></td>
+    <td><%= x.category %></td>
+  </tr>
+  <% }) %>
+</table>
+<br><br><br><br><br>
+<%- include('parts/footer') %>
+</body>
